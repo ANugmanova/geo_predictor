@@ -66,7 +66,7 @@ def evaluate(model, eval_dataloader):
 
 
 def load_data(file_name):
-    dataset = pd.read_csv(file_name)[:2000]
+    dataset = pd.read_csv(file_name)
     dataset = Dataset(dataset)
     dataloader = DataLoader(dataset, batch_size=BATCH_SIZE)
     return dataloader
